@@ -2,7 +2,6 @@
 #include <string.h>
 #include "Functionality.h"
 
-
 void CreateInformat(int lowLimit,int highLimit,int counter, char* buff)
 {
   
