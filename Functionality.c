@@ -1,6 +1,6 @@
 #include <stdio.h>
 void doSort(int *A ,int len);
-int CountValue(int *A,int low,int high);
+int CountValue(int *A,int len,int low,int high);
 int main()
 {  
     int A[] = {1,2,3,3,5,4,10,11,12};
@@ -10,12 +10,12 @@ int main()
     printf("%d ",cnt);
     return 0;
 } 
-int CountValue(int *A,int low,int high)
+int CountValue(int *A,int len, int low,int high)
 {
     int cnt = 1;
-    for(int i=low;i<=high;i++)
+    for(int i=0;i<=len;i++)
     {
-        if(A[i]==low || A[i]<=high)
+        if(A[i]>=low && A[i]<=high)
         {
             cnt++;
         }
@@ -23,7 +23,7 @@ int CountValue(int *A,int low,int high)
     return cnt;
 }  void doSort(int *A,int len )
 {
-    //int len = sizeof(A[0]/A);
+    
     int tmp;
     for(int i=0;i<len;i++)
     {
