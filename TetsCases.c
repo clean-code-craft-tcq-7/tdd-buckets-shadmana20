@@ -2,11 +2,16 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
+#include "Functionality.h"
 
 int main()
 {
+ char output[100];
+ memset(output, 0, 100);
  
- assert(strcmp(StrTest,"Range, Readings\n4-5, 2\n") == 0);
+ void CreateInformat(4,5,8, output);
+ 
+ assert(strcmp(output,"Range, Readings\n4-5, 2\n") == 0);
   
   return 0;
   
