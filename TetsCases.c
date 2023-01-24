@@ -4,7 +4,8 @@
 #include <string.h>
 #include "Functionality.h"
 
-int main()
+
+int main(void)
 {
  char output[100];
  memset(output, 0, 100);
@@ -13,6 +14,6 @@ int main()
  
  assert(strcmp(output,"Range, Readings\n4-5, 2\n") == 0);
   
-  return 0;
+return 0;
   
 }
