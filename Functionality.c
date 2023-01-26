@@ -9,8 +9,8 @@ char Data[100];
 sprintf(Data,"%s\n%d-%d, %d\n",CSVFormat,lowLimit,highLimit,counter);
 strncpy(buff,Data,strlen(Data));
 }
-
- void doSort(int *A,int len )
+ 
+void doSort(int *A,int len)
 {
    int tmp;
     for(int i=0;i<len;i++)
@@ -38,4 +38,4 @@ int CountValue(int *A,int len, int low,int high)
         }
     }
     return cnt;
-} 
+}
