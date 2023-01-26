@@ -9,7 +9,6 @@ char Data[100];
 sprintf(Data,"%s\n%d-%d, %d\n",CSVFormat,lowLimit,highLimit,counter);
 strncpy(buff,Data,strlen(Data));
 }
- 
 void doSort(int *A,int len)
 {int tmp,i,j;
  for(i=0;i<len;i++){
@@ -18,19 +17,13 @@ void doSort(int *A,int len)
        tmp = A[j];
        A[j] = A[j+1];
        A[j+1] = tmp;
-     }
-   }
- }
-}
+}}}}
 int CountValue(int *A,int len, int low,int high)
 {
-  int i,cnt = 1;
-  for(i=0;i<=len;i++)
-  {
-    if(A[i]>=low && A[i]<=high)
-    {
+int i,cnt = 1;
+for(i=0;i<=len;i++){
+  if(A[i]>=low && A[i]<=high){
       cnt++;
-    }
-  }
+}}
   return cnt;
 }
