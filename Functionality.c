@@ -12,10 +12,10 @@ strncpy(buff,Data,strlen(Data));
  
 void doSort(int *A,int len)
 {
-   int tmp;
-    for(int i=0;i<len;i++)
+   int tmp,i,j;
+    for(i=0;i<len;i++)
     {
-        for(int j=0;j<(len-i-1);j++)
+        for(j=0;j<(len-i-1);j++)
         {
             if(A[j]>A[j+1])
             {
@@ -29,8 +29,8 @@ void doSort(int *A,int len)
 
 int CountValue(int *A,int len, int low,int high)
 {
-    int cnt = 1;
-    for(int i=0;i<=len;i++)
+    int i,cnt = 1;
+    for(i=0;i<=len;i++)
     {
         if(A[i]>=low && A[i]<=high)
         {
