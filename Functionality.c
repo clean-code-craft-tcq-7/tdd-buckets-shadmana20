@@ -12,14 +12,11 @@ strncpy(buff,Data,strlen(Data));
  
 void doSort(int *A,int len)
 {int tmp,i,j;
- for(i=0;i<len;i++)
- {
-   for(j=0;j<(len-i-1);j++)
-   {
-     if(A[j]>A[j+1])
-     {
+ for(i=0;i<len;i++){
+   for(j=0;j<(len-i-1);j++){
+     if(A[j]>A[j+1]){
        tmp = A[j];
-       A[j] = A[j+1];
+       A[j] = A[j+1];
        A[j+1] = tmp;
      }
    }
