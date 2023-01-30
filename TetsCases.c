@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-#include "Implementation.h"
+#include "Functionality.h"
 
 
 int main(void)
