@@ -8,7 +8,7 @@
 int main(void)
 {
  
- int current_samples[7]={3, 3, 5, 4, 10, 11, 12};
+ int current_samples[]={1};
  int storecount;
  char output[100];
  memset(output, 0, 100);
