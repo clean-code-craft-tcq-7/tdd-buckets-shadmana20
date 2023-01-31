@@ -13,7 +13,7 @@ int main(void)
  int current_samples3[]={1,1,1,1,1,1,1};         /* All same element it should return 7 by default limit 1,1 */
  int current_samples4[]={3, 3, 5, 4, 10, 11,12}; /* Given use case  3-5 it should return 4*/
  int current_samples5[]={3, 3, 5, 4, 10, 11,12}; /* Given use case  12-12 it should return 3*/
-// int current_samples6[]={};
+ int current_samples6[]={1,2};
  
 
  char output[100];
@@ -51,8 +51,8 @@ printf("%s", output);
 //assert(strcmp(output,"Range, Readings\n10-12, 3\n") == 0);
 
  
-//PerformTest(current_samples,LEN(current_samples6),1,1,output);
-//printf("%s", output);
+PerformTest(current_samples6,LEN(current_samples6),1,2,output);
+printf("%s", output);
 //assert(strcmp(output,"Range, Readings\n10-12, 3\n") == 0);
   
 return 0;
