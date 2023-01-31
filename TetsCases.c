@@ -23,28 +23,28 @@ PerformTest(current_samples1,LEN(current_samples1),1,1,output);
 printf("%s", output);
 assert(strcmp(output,"Range, Readings\n1-1, 0\n") == 0);
  
- char output[100];
+ 
  memset(output, 0, 100);
  
 PerformTest(current_samples2,LEN(current_samples2),1,1,output);
 printf("%s", output);
 assert(strcmp(output,"Range, Readings\n1-1, 1\n") == 0);
  
- char output[100];
+ 
  memset(output, 0, 100);
  
 PerformTest(current_samples3,LEN(current_samples3),1,1,output);
 printf("%s", output);
 assert(strcmp(output,"Range, Readings\n1-1, 7\n") == 0);
  
- char output[100];
+ 
  memset(output, 0, 100);
  
 PerformTest(current_samples4,LEN(current_samples4),3,5,output);
 printf("%s", output);
 assert(strcmp(output,"Range, Readings\n3-5, 4\n") == 0);
  
- char output[100];
+ 
  memset(output, 0, 100);
  
 PerformTest(current_samples5,LEN(current_samples5),10,12,output);
