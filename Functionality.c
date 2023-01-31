@@ -53,7 +53,7 @@ for(i=0;i<=len;i++)
 void PerformTest(int *A,int min,int max,char* buff)
 {
 int storecount;
-int len =sizeof(A)/sizeof(A[0]);
+int len = LEN(A)
 doSort(A,len);
 storecount = CountValue(A,len,min,max);
 CreateInformat(min,max,storecount,buff);
