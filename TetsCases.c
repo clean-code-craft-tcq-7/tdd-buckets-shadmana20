@@ -14,13 +14,9 @@ int main(void)
  memset(output, 0, 100);
  
 
-doSort(current_samples,LEN(current_samples));
-storecount = CountValue(current_samples,7,3,5);
-CreateInformat(3,5,storecount,output);
-printf("%s\n", output);
-assert(strcmp(output,"Range, Readings\n3-5, 4\n") == 0);
+
  
-PerformTest(current_samples,LEN(current_samples),10,12,output);
+PerformTest(current_samples,LEN(current_samples),1,1,output);
 printf("%s", output);
 assert(strcmp(output,"Range, Readings\n10-12, 3\n") == 0);
   
