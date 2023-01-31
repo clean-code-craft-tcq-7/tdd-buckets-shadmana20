@@ -50,10 +50,9 @@ for(i=0;i<=len;i++)
    }
  }
 
-void PerformTest(int *A,int min,int max,char* buff)
+void PerformTest(int *A,int len,int min,int max,char* buff)
 {
 int storecount;
-int len = LEN(A);
 doSort(A,len);
 storecount = CountValue(A,len,min,max);
 CreateInformat(min,max,storecount,buff);
