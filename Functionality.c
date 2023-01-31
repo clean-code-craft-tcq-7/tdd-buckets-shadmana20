@@ -49,3 +49,11 @@ for(i=0;i<=len;i++)
       b = tmp;
    }
  }
+
+void PerformTest(int *A,int len,int min,int max,char* buff)
+{
+  int storecount;
+doSort(A,len);
+storecount = CountValue(current_samples,len,min,max);
+CreateInformat(min,max,storecount,buff);
+}
