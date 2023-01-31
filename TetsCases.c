@@ -20,8 +20,7 @@ CreateInformat(3,5,storecount,output);
 printf("%s\n", output);
 assert(strcmp(output,"Range, Readings\n3-5, 4\n") == 0);
  
-storecount = CountValue(current_samples,7,10,12);
-CreateInformat(10,12,storecount,output);
+void PerformTest(current_samples,7,10,12,output);
 printf("%s", output);
 assert(strcmp(output,"Range, Readings\n10-12, 3\n") == 0);
   
