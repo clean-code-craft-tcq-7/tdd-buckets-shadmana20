@@ -3,9 +3,9 @@
 #include "Functionality.h"
 
 #define checkrange(a, low, high)  (a>=low && a<=high)
-#define ChechCountIsOne(a) (a == 1 ? 1:0)
 
-static void swapelement(int a, int b);
+
+static void swapElement(int a, int b);
 
 void CreateInformat(int lowLimit,int highLimit,int counter, char* buff)
 {
@@ -20,7 +20,7 @@ void doSort(int *A,int len)
  {
    for(j=0;j<(len-i-1);j++)
    { 
-    swapelement(A[j],A[j+1]);
+    swapElement(A[j],A[j+1]);
    }
  }
 }
@@ -41,7 +41,7 @@ for(i=0;i<=len-1;i++)
 }
 
 
- static void swapelement(int a, int b)
+ static void swapElement(int a, int b)
  {
    int tmp;
    if(a>b)
