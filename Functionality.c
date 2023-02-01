@@ -3,6 +3,7 @@
 #include "Functionality.h"
 
 #define checkrange(a, low, high)  (a>=low && a<=high)
+#define ChechCountIsOne(a) (a == 1 ? 1:0)
 
 static void swapelement(int a, int b);
 
@@ -35,7 +36,7 @@ for(i=0;i<=len-1;i++)
       cnt++;
   }
 }
-  if(len == 1){
+  if(ChechCountIsOne(a)){
     cnt = 1;
   }
   return cnt;
