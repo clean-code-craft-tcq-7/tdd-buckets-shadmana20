@@ -15,7 +15,7 @@ void CreateInformat(int lowLimit,int highLimit,int counter, char* buff)
 void doSort(int *A,int len)
 {
   int i,j;
- for(i=0;i<len;i++)
+ for(i=0;i<len-1;i++)
  {
    for(j=0;j<(len-i-1);j++)
    { 
