@@ -36,9 +36,7 @@ for(i=0;i<=len-1;i++)
       cnt++;
   }
 }
-  if(ChechCountIsOne(a)){
-    cnt = 1;
-  }
+  
   return cnt;
 }
 
