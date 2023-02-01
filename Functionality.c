@@ -35,6 +35,9 @@ for(i=0;i<=len;i++)
       cnt++;
   }
 }
+  if(len == 1){
+    cnt = 1;
+  }
   return cnt;
 }
 
