@@ -2,7 +2,7 @@
 #include <math.h>
 
 #include "Functionality.h"
-#define twoToPowerTwelve 4096
+#define twoToPowerTwelve 4094
 #define Converter(x)  ((int)(x*1000)%1000)
 
 int A2DConverter(int LSBValue)
