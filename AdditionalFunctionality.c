@@ -8,7 +8,7 @@
 int A2DConverter(int LSBValue)
 {
   
-    float f,ReturnVal = 0;
+    float f,ReturnVal;
     
     ReturnVal = (LSBValue/twoToPowerTwelve)*10;
     f = Converter(ReturnVal);
