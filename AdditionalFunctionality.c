@@ -3,6 +3,8 @@
 
 #include "Functionality.h"
 #define twoToPowerTwelve 4094
+#define Max12BitValue 4095
+
 #define Converter(x)  ((int)(x*1000)%1000)
 
 int A2DConverter(int LSBValue)
@@ -25,17 +27,17 @@ int A2DConverter(int LSBValue)
     return (int)ReturnVal;
   
 }
-int * RemoveUnwanted(int arr[])
+int * RemoveUnwanted(int arr[],int len)
 {
-    static int r[7];
-    for(int i=0;i<7;i++)
+    static int r[len];
+    for(int i=0;i<len;i++)
     {
         if(arr[i]<=4094)
         {   
             r[i] = arr[i];
         }
         else{
-           r[i] = 4095;
+           r[i] = Max12BitValue;
           
         }
     }
