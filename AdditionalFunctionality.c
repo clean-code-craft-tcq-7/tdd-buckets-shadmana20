@@ -25,3 +25,19 @@ int A2DConverter(int LSBValue)
     return (int)ReturnVal;
   
 }
+int * RemoveUnwanted(int arr[])
+{
+    static int r[7];
+    for(int i=0;i<7;i++)
+    {
+        if(arr[i]<=4094)
+        {   
+            r[i] = arr[i];
+        }
+        else{
+           r[i] = 4095;
+          
+        }
+    }
+    return r;
+}
