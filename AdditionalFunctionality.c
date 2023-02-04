@@ -10,7 +10,7 @@ int A2DConverter(int LSBValue)
   
     float f,ReturnVal;
     
-    ReturnVal = ((LSBValue)*10)/twoToPowerTwelve;
+    ReturnVal = ((float)(LSBValue)*10)/twoToPowerTwelve;
     f = Converter(ReturnVal);
     
     if(f>=500)
