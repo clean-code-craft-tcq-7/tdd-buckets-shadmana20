@@ -4,6 +4,8 @@
 #include <string.h>
 #include "Functionality.h"
 
+extern int A2DConverter(int LSBValue);
+
 
 int main(void)
 {
