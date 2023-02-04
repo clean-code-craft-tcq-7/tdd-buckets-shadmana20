@@ -70,6 +70,20 @@ assert(strcmp(output,"Range, Readings\n-2-2, 5\n") == 0);
  
 printf("%d",A2DConverter(1146)); 
 assert(A2DConverter(1146) == 3);
+ 
+ int Sample1[] = {0,1,1024,4096,2048,4094,6000};
+ int *p;
+ p = RemoveUnwanted(Sample1,LEN(Sample1));
+ for(int i=0 i<LEN(Sample1);i++)
+ {
+  printf("%d ", A2DConverter(*(p+i));
+ }
+ 
+ 
+ 
+ 
+ 
+ 
   
 return 0;
   
