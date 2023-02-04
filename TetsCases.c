@@ -5,6 +5,7 @@
 #include "Functionality.h"
 
 extern int A2DConverter(int LSBValue);
+extern int *RemoveUnwanted(int Arr[],int len);
 
 
 int main(void)
