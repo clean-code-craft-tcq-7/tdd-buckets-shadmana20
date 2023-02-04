@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
-#include <Functionality.h>
+
+#include "Functionality.h"
 #define twoToPowerTwelve 4096
 #define Converter(x)  ((int)(x*1000)%1000)
 
