@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-define twoToPowerTwelve 4096
+#define twoToPowerTwelve 4096
 
 int A2DConverter(int LSBValue)
 {
