@@ -75,7 +75,7 @@ printf("%d",A2DConverter(1146,12));
  int Sample1[] = {0,1,1024,4096,2048,4094,6000};
  int *p;
  p = RemoveUnwanted(Sample1,12);
- for(int i=0 i<LEN(Sample1);i++)
+ for(int i=0;i<LEN(Sample1);i++)
  {
   printf("%d ", A2DConverter(*(p+i),12);
  }
