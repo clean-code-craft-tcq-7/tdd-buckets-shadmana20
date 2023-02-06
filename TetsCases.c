@@ -11,7 +11,7 @@ extern int *RemoveUnwanted(int Arr[],int bit);
 int main(void)
 {
  
-/*
+
  int current_samples1[]={};                      /*Empty Array it should return counter as 0 by default limit 1,1*/
  int current_samples2[]={1};                     /* Single element it should return 1  by default limit 1,1*/
  int current_samples3[]={1,1,1,1,1,1,1};         /* All same element it should return 7 by default limit 1,1 */
@@ -22,7 +22,7 @@ int main(void)
  int current_samples8[]={3,2,1,0,-1,-2,-3};       /* negative value*/
  
 
- char output[100];
+/* char output[100];
  memset(output, 0, 100);
  
 PerformTest(current_samples1,LEN(current_samples1),1,1,output);
