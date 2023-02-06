@@ -32,7 +32,7 @@ int A2DConverter(int LSBValue,int bit)
 }
 int * RemoveUnwanted(int arr[],int bit)
 { 
-    const int len = LEN(arr);
+    const int len = 7;
     printf("SHad %d " , len);
     int threshold = NthBitCalculate(bit);
     static int r[len];
@@ -44,6 +44,7 @@ int * RemoveUnwanted(int arr[],int bit)
         }
         else{
            r[i] = Max12BitValue;
+            
           
         }
     }
