@@ -32,7 +32,7 @@ int A2DConverter(int LSBValue,int bit)
 }
 int * RemoveUnwanted(int arr[],int bit)
 { 
-    int len = LEN(arr);
+    const int len = LEN(arr);
     int threshold = NthBitCalculate(bit);
     static int r[len];
     for(int i=0;i<len;i++)
