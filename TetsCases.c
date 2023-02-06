@@ -78,6 +78,7 @@ printf("%d",A2DConverter(1146,12));
  for(int i=0;i<LEN(Sample1);i++)
  {
   printf("%d --> \n ", A2DConverter(*(p+i),12));
+  printf("%d - \n ",*(p+i));
  }
 return 0;
   
