@@ -6,6 +6,6 @@ void CreateInformat(int lowLimit,int highLimit,int counter, char* buff);
 void PerformTest(int *A,int len,int min,int max,char* buff);
 #define LEN(A) sizeof(A)/sizeof(A[0])
 int A2DConverter(int LSBValue,int bit);
-int * RemoveUnwanted(int arr[],int len);
+int * RemoveUnwanted(int arr[],int bit);
 
 
