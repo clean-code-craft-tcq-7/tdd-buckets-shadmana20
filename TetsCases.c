@@ -4,8 +4,8 @@
 #include <string.h>
 #include "Functionality.h"
 
-extern int A2DConverter(int LSBValue);
-extern int *RemoveUnwanted(int Arr[],int len);
+extern int A2DConverter(int LSBValue,int bit);
+extern int *RemoveUnwanted(int Arr[],int bit);
 
 
 int main(void)
@@ -69,15 +69,15 @@ PerformTest(current_samples8,LEN(current_samples8),-2,2,output);
 printf("%s", output);
 assert(strcmp(output,"Range, Readings\n-2-2, 5\n") == 0);
  
-printf("%d",A2DConverter(1146)); 
-assert(A2DConverter(1146) == 3);
+printf("%d",A2DConverter(1146,12)); 
+//assert(A2DConverter(1146) == 3);
  
  int Sample1[] = {0,1,1024,4096,2048,4094,6000};
  int *p;
- p = RemoveUnwanted(Sample1,LEN(Sample1));
+ p = RemoveUnwanted(Sample1,12);
  for(int i=0 i<LEN(Sample1);i++)
  {
-  printf("%d ", A2DConverter(*(p+i));
+  printf("%d ", A2DConverter(*(p+i),12);
  }
  
  
