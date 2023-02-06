@@ -34,7 +34,7 @@ int * RemoveUnwanted(int arr[],int bit)
 { 
     const int len = LEN(arr);
     int threshold = NthBitCalculate(bit);
-    static int r[len];
+    int r[len];
     for(int i=0;i<len;i++)
     {
         if(arr[i]<=threshold)
