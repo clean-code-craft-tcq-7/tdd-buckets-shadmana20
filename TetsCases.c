@@ -81,8 +81,10 @@ assert(A2DConverter(1146) == 3);
  leng = LEN(Sample1);
  for(int i=0;i<leng;i++)
  {
-  //printf("%d --> \n ", A2DConverter(*(p+i),12));
-  printf("%d - \n ",*(p+i));
+  if(*(p+i)!=32768){
+  printf("%d --> \n ", A2DConverter(*(p+i),12));
+  }
+  
  }
 return 0;
   
