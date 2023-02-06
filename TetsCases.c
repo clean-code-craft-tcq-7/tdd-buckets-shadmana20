@@ -77,7 +77,7 @@ printf("%d",A2DConverter(1146,12));
  p = RemoveUnwanted(Sample1,12);
  for(int i=0;i<LEN(Sample1);i++)
  {
-  printf("%d ", A2DConverter(*(p+i),12);
+  printf("%d ", A2DConverter(*(p+i),12));
  }
  
  
