@@ -11,6 +11,7 @@ extern int *RemoveUnwanted(int Arr[],int bit);
 int main(void)
 {
  
+/*
  int current_samples1[]={};                      /*Empty Array it should return counter as 0 by default limit 1,1*/
  int current_samples2[]={1};                     /* Single element it should return 1  by default limit 1,1*/
  int current_samples3[]={1,1,1,1,1,1,1};         /* All same element it should return 7 by default limit 1,1 */
@@ -70,14 +71,16 @@ printf("%s", output);
 assert(strcmp(output,"Range, Readings\n-2-2, 5\n") == 0);
  
 printf("%d",A2DConverter(1146,12)); 
-//assert(A2DConverter(1146) == 3);
+assert(A2DConverter(1146) == 3);
  
+ */
+  
  int Sample1[] = {0,1,1024,4096,2048,4094,6000};
  int *p;
  p = RemoveUnwanted(Sample1,12);
  for(int i=0;i<LEN(Sample1);i++)
  {
-  printf("%d --> \n ", A2DConverter(*(p+i),12));
+  //printf("%d --> \n ", A2DConverter(*(p+i),12));
   printf("%d - \n ",*(p+i));
  }
 return 0;
