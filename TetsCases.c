@@ -76,10 +76,10 @@ assert(A2DConverter(1146) == 3);
  */
   
  int Sample1[] = {0,1,1024,4096,2048,4094,6000};
- int *p;
+ int *p,leng;
  p = RemoveUnwanted(Sample1,12);
- printf("%d LEN ",LEN(Sample1));
- for(int i=0;i<LEN(Sample1);i++)
+ leng = LEN(Sample1);
+ for(int i=0;i<leng;i++)
  {
   //printf("%d --> \n ", A2DConverter(*(p+i),12));
   printf("%d - \n ",*(p+i));
