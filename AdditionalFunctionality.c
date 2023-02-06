@@ -3,19 +3,22 @@
 
 #include "Functionality.h"
 #define twoToPowerTwelve 4094
-#define Max12BitValue 4095
+#define Max12BitValue 32768
+#define NthBitCalculate(n)(int)(pow(2,n) -1)
+#define Half  500
 
 #define Converter(x)  ((int)(x*1000)%1000)
 
-int A2DConverter(int LSBValue)
+
+int A2DConverter(int LSBValue,int bit)
 {
-  
+    int MaxValue = NthBitCalculate(bit);
     float f,ReturnVal;
     
-    ReturnVal = ((float)(LSBValue)*10)/twoToPowerTwelve;
+    ReturnVal = ((float)(LSBValue)*10)/(MaxValue);
     f = Converter(ReturnVal);
     
-    if(f>=500)
+    if(f>=Half)
     {
         ReturnVal = ceil(ReturnVal);
     }
@@ -27,12 +30,14 @@ int A2DConverter(int LSBValue)
     return (int)ReturnVal;
   
 }
-int * RemoveUnwanted(int arr[],int len)
-{
+int * RemoveUnwanted(int arr[],int bit)
+{ 
+    int len = LEN(arr);
+    int threshold = NthBitCalculate(bit);
     static int r[len];
     for(int i=0;i<len;i++)
     {
-        if(arr[i]<=4094)
+        if(arr[i]<=threshold)
         {   
             r[i] = arr[i];
         }
